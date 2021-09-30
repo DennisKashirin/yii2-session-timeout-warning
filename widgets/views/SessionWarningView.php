@@ -8,7 +8,7 @@ use yii\helpers\Url;
 /** @var array|string $logoutUrl */
 ?>
 
-    <div id="session-warning-modal" class="modal fade" tabindex="-1" role="dialog" data-warn-before="<?= $warnBefore; ?>" data-user-id="<?= $userId; ?>" data-extend-url="<?= Url::to($extendUrl); ?>">
+<div id="session-warning-modal" class="modal fade" style="width:100%; text-align: center;" tabindex="-1" role="dialog" data-warn-before="<?= $warnBefore; ?>" data-user-id="<?= $userId; ?>" data-extend-url="<?= Url::to($extendUrl); ?>">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-body">

@@ -20,13 +20,13 @@ If user session is expired, page will be reloaded.
 Either run
 
 ```
-$ php composer.phar require mg-code/yii2-session-timeout-warning "@dev"
+$ php composer.phar require dennis-kashirin/yii2-session-timeout-warning "@dev"
 ```
 
 or add
 
 ```
-"mg-code/yii2-session-timeout-warning": "@dev"
+"dennis-kashirin/yii2-session-timeout-warning": "@dev"
 ```
 
 to the ```require``` section of your `composer.json` file.
