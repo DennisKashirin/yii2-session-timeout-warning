@@ -1,6 +1,10 @@
 # yii2-session-timeout-warning
 Users are warned about expiring session.
 
+### Differences with original code
+
+1. Added support of Russian and Ukrainian languages
+
 This is simple implementation of session timeout warning.
 Plugin does not make any ajax calls, otherwise it would not work with many projects. Components like RBAC are using user identity all time and auth session is renewed every request.
 
@@ -41,7 +45,7 @@ to the ```require``` section of your `composer.json` file.
 ];
 ```
 `initMesscompoages` property initializes translations. 
-Currently only English and Latvian languages are supported.
+Currently only English, Latvian, Russian and Ukrainian languages are supported.
 Please contribute and add your language.
 
 2) Add controller to controllerMap in application config.
