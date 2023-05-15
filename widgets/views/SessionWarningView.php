@@ -19,9 +19,9 @@ use yii\helpers\Html;
             <div class="modal-footer">
                 <?php if ($logoutUrl) {
                     if ($logoutUrlIsPost) {
-                        echo Html::a(Yii::t('mgcode/sessionWarning', 'Logout'), Url::to($logoutUrl), ['data-method' => 'POST']);
+                        echo Html::a(Yii::t('mgcode/sessionWarning', 'Logout'), Url::to($logoutUrl), ['data-method' => 'POST', 'class' =>'btn btn-default']);
                     } else {
-                        echo Html::a(Yii::t('mgcode/sessionWarning', 'Logout'), Url::to($logoutUrl));
+                        echo Html::a(Yii::t('mgcode/sessionWarning', 'Logout'), Url::to($logoutUrl), ['class' =>'btn btn-default']);
                     }
                 } ?>
                 <button type="button" class="btn btn-success continue"><?= Yii::t('mgcode/sessionWarning', 'Continue') ?></button>
