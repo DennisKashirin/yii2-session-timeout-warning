@@ -17,6 +17,9 @@ class SessionWarningWidget extends Widget
 
     /** @var string|array Logout url, if defined shows logout button */
     public $logoutUrl;
+    
+    /** @var string|array Logout url, with post method or not */
+    public $logoutUrlIsPost = false;
 
     public function run()
     {
@@ -27,10 +30,11 @@ class SessionWarningWidget extends Widget
 
         $userId = $user->id;
         return $this->render('SessionWarningView', [
-            'userId' => $userId,
-            'extendUrl' => $this->extendUrl,
-            'warnBefore' => $this->warnBefore,
-            'logoutUrl' => $this->logoutUrl,
+            'userId'            => $userId,
+            'extendUrl'         => $this->extendUrl,
+            'warnBefore'        => $this->warnBefore,
+            'logoutUrl'         => $this->logoutUrl,
+            'logoutUrlIsPost'   => $this->logoutUrlIsPost
         ]);
     }
 }
